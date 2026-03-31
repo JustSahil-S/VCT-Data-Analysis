@@ -40,6 +40,25 @@ python player_tournament_chart.py \
   --top-n 20
 ```
 
+Or resolve by player name:
+
+```bash
+python player_tournament_chart.py \
+  --player-name "something" \
+  --output-csv data/raw/player_tournament_counts_something.csv \
+  --output-chart data/charts/matches_per_tournament_something.png \
+  --top-n 20
+```
+
+Prompt mode (no args):
+
+```bash
+python player_tournament_chart.py
+```
+
+The script will ask for the player name and then generate the CSV + chart.
+Default output names now include the player slug so each run is easier to identify.
+
 ## Output files
 
 - `data/raw/matches.csv`
